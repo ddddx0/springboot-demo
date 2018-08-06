@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    #durid连接池配置
+    druid:
+      driver-class-name: oracle.jdbc.driver.OracleDriver
+      url: jdbc:oracle:thin:@localhost:1521:ORCL
+      username: mtest
+      password: mtest
+server:
+  port: 9000
