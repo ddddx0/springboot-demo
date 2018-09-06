@@ -6,5 +6,7 @@ spring:
       url: jdbc:oracle:thin:@localhost:1521:ORCL
       username: mtest
       password: mtest
+  application:
+    name: demo-boot
 server:
   port: 9000
