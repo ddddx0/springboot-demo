@@ -13,7 +13,7 @@ public class UserController {
         return "testAll";
     }
 
-    @RequestMapping("/test1")
+    @RequestMapping("/test2")
     public String test(){
         return "HelloWorld";
     }
