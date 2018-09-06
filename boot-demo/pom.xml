@@ -55,7 +55,7 @@
 
     <build>
         <!--控制最终生成jar名称-->
-        <finalName>demo-boot</finalName>
+        <finalName>boot-demo</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
