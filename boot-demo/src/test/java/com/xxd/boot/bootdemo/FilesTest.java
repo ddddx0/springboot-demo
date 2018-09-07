@@ -10,7 +10,7 @@ import java.io.*;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class FilesTest {
-
+/*
     private static String targetFile = "D://file/a.txt";
 
     public void openLocalFile(String fileName) {
@@ -31,9 +31,8 @@ public class FilesTest {
             e.printStackTrace();
         }
     }
-
     @Test
     public void testMain() {
         openLocalFile("a.txt");
-    }
+    }*/
 }
