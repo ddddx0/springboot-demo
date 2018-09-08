@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
 
     @RequestMapping("/all")
-
     public String getAll() {
         return "testAll";
     }
