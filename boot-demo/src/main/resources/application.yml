@@ -10,3 +10,5 @@ spring:
     name: demo-boot
 server:
   port: 9310
+mybatis:
+  mapper-locations: classpath:mapper/*
