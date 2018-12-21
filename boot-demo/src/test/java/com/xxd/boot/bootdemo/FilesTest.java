@@ -10,6 +10,11 @@ import java.io.*;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class FilesTest {
+
+    @Test
+    public void test() {
+
+    }
 /*
     private static String targetFile = "D://file/a.txt";
 

@@ -45,11 +45,10 @@ public class BootDemoApplicationTests {
     @Test
     public void testMybatis() {
         SqlSession sqlSession = sqlSessionFactory.openSession();
-//        List<Object> objects = sqlSession.selectList("testMapper.selectAll");
         UserMapper mapper1 = sqlSession.getMapper(UserMapper.class);
         List<User> users = mapper1.selectAll();
-        System.out.println(users.size());
-//        System.out.println(objects.size());
+//        List<User> users2 = mapper1.selectAll();
+        int i = 1;
     }
 
 }

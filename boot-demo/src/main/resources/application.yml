@@ -11,4 +11,7 @@ spring:
 server:
   port: 9310
 mybatis:
-  mapper-locations: classpath:mapper/*
+  mapper-locations: classpath:mapper/*    #配置扫描mapper.xml的位置
+logging:
+  level:
+    com.xxd.boot.bootdemo.mapper: DEBUG   #配置mapper包下的logback日志级别

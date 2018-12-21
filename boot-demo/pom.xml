@@ -58,7 +58,15 @@
             <version>1.18.4</version>
             <scope>provided</scope>
         </dependency>
+        <!-- rabbitMQ-->
+        <dependency>
+            <groupId>com.rabbitmq</groupId>
+            <artifactId>amqp-client</artifactId>
+            <version>5.5.1</version>
+        </dependency>
+
     </dependencies>
+
 
     <build>
         <!--控制最终生成jar名称-->
@@ -91,9 +99,22 @@
                 </configuration>
             </plugin>
         </plugins>
-
-
     </build>
 
+    <!-- 配置打包自动上传到 私有nexus库中-->
+    <distributionManagement>
+        <repository>
+            <!-- id 需要和maven的setting.xml文件中的<server>中的id对应-->
+            <id>releases</id>
+            <name>user release resp</name>
+            <!-- 配置私有库中的地址-->
+            <url>http://192.168.30.97:8081/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>user snapshots resp</name>
+            <url>http://192.168.30.97:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 </project>
